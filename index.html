@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Application | Sairam</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon-bg.png">
+</head>
+<body>
+
+    <audio src="" id="audio-source"></audio>
+
+    <!-- Home section -->
+    <section class="home-section">
+        <!-- carousel -->
+        <div class="carousal">
+            <img src="Assets/images/cover 1.png" class="active" alt="image1">
+            <img src="Assets/images/cover 2.png" alt="image2">
+            <img src="Assets/images/cover 3.png" alt="image3">
+            <img src="Assets/images/cover 4.png" alt="image4">
+            <img src="Assets/images/cover 5.png" alt="image5">
+        </div>
+
+        <!-- playlists -->
+        <h1 class="heading">Recently Played</h1>
+        <div class="playlists-group">
+            <div class="playlist-card">
+                <img src="Assets/images/cover 9.png" class="playlist-card-img" alt="" >
+                <p class="playlist-card-name">Top international</p>
+            </div>
+            <div class="playlist-card">
+                <img src="Assets/images/cover 2.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Tollywood Hits</p>
+            </div>
+            <div class="playlist-card">
+                <img src="Assets/images/cover 5.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Bollywood Hits</p>
+            </div>
+            <div class="playlist-card">
+                <img src="Assets/images/cover 11.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Top 50</p>
+            </div>
+            <div class="playlist-card">
+                <img src="Assets/images/cover 4.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Justin Biber</p>
+            </div>
+        </div>
+
+        <!-- playlist-2 -->
+        <h1 class="heading">based on your intrests</h1>
+        <div class="playlists-group">
+            <div class="playlist-card">
+                <img src="Assets/images/cover 13.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Telugu Songs</p>
+            </div>
+            <div class="playlist-card">
+                <img src="Assets/images/cover 11.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Latest Collection</p>
+            </div>
+            <div class="playlist-card">
+                <img src="Assets/images/cover 3.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">Bollywood Hits</p>
+            </div>
+            <div class="playlist-card">
+                <img src="Assets/images/cover 5.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">All time hits</p>
+            </div>
+            <div class="playlist-card">
+                <img src="Assets/images/cover 4.png" class="playlist-card-img" alt="">
+                <p class="playlist-card-name">English Songs</p>
+            </div>
+        </div>
+    </section>
+        <!-- bottom music  -->
+        <section class="music-player-section">
+
+            <img src="Assets/images/back.png" class="back-btn icon hide" alt="">
+            <img src="Assets/images/nav.png" class="nav-btn icon hide" alt="">
+
+            <h1 class="current-song-name">song 1</h1>
+            <p class="artist-name hide">artist 1</p>
+
+            <img src="Assets/images/cover 1.png" class="cover hide" alt="">
+
+            <div class="seek-bar-container">
+                <input type="range" class="music-seek-bar" value="0">
+                <p class="current-time hide ">00:00</p>
+                <p class="duration hide">00:00</p>
+            </div>
+
+            <div class="controls">
+                <span class="fas fa-redo"></span>
+                <div class="main">
+                    <i class="fas fa-backward active"></i>
+                    <i class="fas fa-play active"></i>
+                    <i class="fas fa-pause"></i>
+                    <i class="fas fa-forward active"></i>
+                </div>
+                <input type="range" class="volume-slider" max="1" value="1" step="0.1">
+                <span class="fas fa-volume-up"></span>
+            </div>
+            <!-- <marquee behavior="" direction="">	&#169;sairam</marquee> -->
+        </section>
+
+    
+    <section class="playlist ">
+
+        <img src="Assets/images/back.png" class="back-btn icon" alt="">
+
+        <h1 class="title">Playlist</h1>
+
+        <div class="queue active">
+            <div class="queue-cover">
+                <img src="Assets/images/achyutham-keshavam.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Achyutham Keshavam</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="Assets/images/agar-thum.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Agar Tum Saath Ho</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="Assets/images/baby-jb.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Baby</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="Assets/images/druva.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Choosa Choosa</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="Assets/images/dhada.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Diwali Deepaanni</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="Assets/images/arjun reddy.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Telisiney Na Nuvvey</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="Assets/images/perfect.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">perfect</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="Assets/images/animal.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Evarevaro</p>
+        </div>
+        
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="Assets/images/liger.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Kalalo Kooda</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="Assets/images/remo.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Kollagotte</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="Assets/images/arjun reddy.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Emitemitemito</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="Assets/images/druva.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Manishi Musugulo</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="Assets/images/orange.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Rooba Rooba</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="Assets/images/the nights.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">The Nights - Avicii</p>
+        </div>
+
+        <div class="queue">
+            <div class="queue-cover">
+                <img src="Assets/images/adithya varma.jpeg" alt="">
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Yean Ennai Pirindhaai</p>
+        </div>  
+
+    </section>
+
+
+    
+
+    <script src="https://kit.fontawesome.com/1397dfa46f.js" crossorigin="anonymous"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
